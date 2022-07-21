@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eLibra</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="all.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="intro">
+			<nav class="nav-bar">
+				<ul>
+					<a href=""><li class="navigation"><small>
+					<i class="fas fa-shopping-basket"></i> Cart</small></li></a>
+					<a href="#cats"><li class="navigation"><small>Categories</small></li></a>
+					<a href="#Sh" ><li class="navigation">Search</li></a>
+                    <a href="#TopS"><li class="navigation"><small>Top Sells</small></li></a>
+					<li class="navigation" onclick="toggleMenu()"><small>Log In <i class="fa fa-user "><br></i></small></li>
+					
+				</ul>
+			</nav>
+			<!-- content start -->
+			<div class="intro_content">
+				<h1>Pump your brains!</h1>
+				<p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+			</div>
+			<!-- content-ends -->
+			<button  class="sendEmail" type="button">Send Mail	</button>
+		</div>
+		<div class="log-shadow regform" >
+			<div class="form-container">
+				<div class="form-content">
+					<form class="log-window">
+						<div class="upper-text">
+							<h1>Sign In</h1>
+							<div id="reg" onclick="regToggle()" text="Register">Register</div>
+							<i class="fas fa-times fa-2x" id=close onclick="toggleMenu()"></i>
+						</div>
+						<div class="middle-form">
+							<div class="email-container">
+								<i class="fa fa-user fa-1x"></i>
+								<input class="form-area" type="text" placeholder="My email is"></input>
+							</div>
+							<div class="password-container">
+								<i class="fa fa-lock fa-1x"></i>
+								<input class="form-area" type="text" placeholder="Password"></input>
+							</div>
+							<button id="sign-in">Sign In</button>
+						</div>
+						<div class="lower-content">
+							<input type="checkbox" name="">
+							Remember Me</input>
+							<a href="#" > <span id="lost">Lost your password?</span></a>
+						</div>
+					</form>
+
+					<form class="reg-window">
+						<div class="upper-text">
+							<h1>Sign Up</h1>
+							<div id="reg" onclick="logToggle()" text="Register">Login</div>
+							<i class="fas fa-times fa-2x" id=close onclick="toggleMenu()"></i>
+						</div>
+						<div class="middle-form">
+							<div class="email-container">
+								<i class="fa fa-user fa-1x"></i>
+								<input class="form-area" type="text" placeholder="My email is"></input>
+							</div>
+							<div class="password-container">
+								<i class="fa fa-lock fa-1x"></i>
+								<input class="form-area" type="text" placeholder="Password"></input>
+							</div>
+							<div class="password-container">
+								<i class="fa fa-lock fa-1x"></i>
+								<input class="form-area" type="text" placeholder="Repeat Password"></input>
+							</div>
+							<button id="sign-in">Sign Up</button>
+						</div>
+						<div class="lower-content">
+							<input type="checkbox" name="">
+							Remember Me</input>
+							<a href="#" > <span id="lost">Lost your password?</span></a>
+						</div>
+					</form>
+				</div>
+			</div>
+        </div>
+	</header>
+	<main>
+		<div class="categories" id=cats>
+			<h1>Categories</h1>
+			<div class="cat_list">
+				 <div class="bestSellers cats" >
+				 	<div><h2>Search bestSellers</h2></div>
+				 </div>
+				 <div class="genre cats">
+				 	<h2>Search your favorite genre</h2>
+				 </div>
+				 <div class="author cats">
+				 	<h2>Search your favorite Author</h2>
+				 </div>
+				 <div class="checkCart cats">
+				 	<h2>Check your Cart</h2>
+				 </div>
+		    </div>
+		</div>
+		
+		<div class="topSells" id="TopS">
+			<div class=zigzag></div>
+				<div class="topSlider">
+					<div class=btnList>
+						<button  id ="btn_1" class="btnSlider" type="submit">
+							<div class="btn_content">
+								Top 1
+							</div>
+						</button>
+						<button  id ="btn_2" class="btnSlider" type="submit">
+							<div class="btn_content">
+								Top 2
+							</div>
+						</button>
+						<button id ="btn_3" class="btnSlider" type="submit">
+							<div class="btn_content">
+								Top 3
+							</div>
+						</button>
+						<button id ="btn_4" class="btnSlider" type="submit">
+							<div class="btn_content">
+								Top 4
+							</div>
+						</button>
+						<button id ="btn_5" class="btnSlider" type="submit">
+							<div class="btn_content">
+								Top 5
+							</div>
+						</button>
+					</div>
+				<div class="contentConteiner">
+					<div id ="btn1"class="sliderContent">
+						<div class="rightSlideContent1"></div>
+						<div class="leftSlideContent">
+							<h1>Outsider</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<input class ="sliderBuy"type="submit" name="button" value="Buy This Right Now">
+						</div>
+
+					</div>
+					
+					<div id ="btn2" class="sliderContent">
+						<div class="rightSlideContent2"></div>
+						<div class="leftSlideContent">
+							<h1>It</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<input class ="sliderBuy"type="submit" name="button" value="Buy This Right Now">
+						</div>
+					</div>
+					<div id ="btn3" class="sliderContent">
+						<div class="rightSlideContent3"></div>
+						<div class="leftSlideContent">
+							<h1>If she knew</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<input class ="sliderBuy"type="submit" name="button" value="Buy This Right Now">
+						</div>
+					</div>
+					<div id ="btn4" class="sliderContent">
+						<div class="rightSlideContent4"></div>
+						<div class="leftSlideContent">
+							<h1>If she saw</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<input class ="sliderBuy"type="submit" name="button" value="Buy This Right Now">
+						</div>
+					</div>
+					<div id ="btn5" class="sliderContent">
+						<div class="rightSlideContent5"></div>
+						<div class="leftSlideContent">
+							<h1>Rich Dad and Poor Dad</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<input class ="sliderBuy"type="submit" name="button" value="Buy This Right Now">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+		<div class="feedback" id="Sh">
+			<h1>Let`s find what you want</h1>
+			<div class="search">
+				<input type="text" name="" placeholder="I`m wait you...">
+				<button onclick="checker()">Search</button>
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		
+		<div class="contacts">
+			<div class="soc_card">
+				<div class="socials">
+					<div class="soc_card_ic">
+						<i class="fab fa-telegram-plane fa-7x"></i>
+					</div>
+					<div class="soc_card_content">
+						<h1>Telegram</h1>
+						<h3>+380(xxx)xxx-xx-xx</h3>
+						<h3>+380(xxx)xxx-xx-xx</h3>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="soc_card">
+				<div class="socials">
+					<div class="soc_card_ic">
+						<i class="fab fa-facebook fa-7x"></i>
+					</div>
+					<div class="soc_card_content">
+						<h1>Telegram</h1>
+						<h3>@Elibra.com</h3>
+						<h3>@Elibra.com</h3>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="soc_card">
+				<div class="socials">
+					<div class="soc_card_ic">
+						<i class="fab fa-instagram fa-7x"></i>
+					</div>
+					<div class="soc_card_content">
+						<h1>Instagram</h1>
+						<h3>@Elibra.com</h3>
+						<h3>@Elibra.com</h3>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="soc_card">
+				<div class="socials">
+					<div class="soc_card_ic">
+						<i class="fab fa-google-plus-square fa-7x"></i>
+					</div>
+					<div class="soc_card_content">
+						<h1>G-mail post</h1>
+						<h3>example@gmail.com</h3>
+						<h3>example@gmail.com</h3>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="soc_card">
+				<div class="socials">
+					<div class="soc_card_ic">
+						<i class="fab fa-viber fa-7x"></i>
+					</div>
+					<div class="soc_card_content">
+						<h1>Viber</h1>
+						<h3>+380(xxx)xxx-xx-xx</h3>
+						<h3>+380(xxx)xxx-xx-xx</h3>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+		</div>
+		<div class="contact">
+			our contacts above
+		</div>
+	</footer>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+	</script>
+
+</body>
+</html>
